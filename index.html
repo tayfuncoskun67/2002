@@ -1,1 +1,881 @@
-tayfun
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2002 Jeodezi ve Fotogrametri Mühendisliği SAMSUN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: Geneva, Verdana;
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("pusula.jpg");
+  min-height: 100%;
+}
+.divortala{
+  display: flex;
+  justify-content: center;
+}
+.toggle div {
+  width: 35px;
+  height: 2px;
+  background-color: rgb(238, 231, 231);
+  margin: 6px 0;
+}
+.cs h2{
+  color:rgb(185, 179, 170);
+  font-weight: bold;
+  text-shadow:1px 1px 0 #000;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .mySlides1 {
+        width: 100%; /* veya istediğiniz genişlik değeri */
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-row w3-bar w3-black w3-card">
+    <div class="w3-quarter">
+      <a class="toggle w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">ANASAYFA</a>
+
+    </div>
+    <div class="w3-quarter">
+    <a href="#uni" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ÜNİVERSİTEMİZ</a>
+    </div>
+    <div class="w3-quarter">
+    <a href="#dostlar" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOSTLAR</a>
+    </div>
+    <div class="w3-quarter w3-dropdown-hover w3-hide-small">
+      <a class="w3-padding-large w3-button" title="More">HOŞ ANILAR &#9660</a>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#bb" class="w3-bar-item w3-button">Bunları biliyor musunuz?</a>
+        <a href="#cs" class="w3-bar-item w3-button">Çok söylenenler</a>
+        <a href="#en" class="w3-bar-item w3-button">Sınıfımızın en'leri</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#uni" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ÜNİVERSİTEMİZ</a>
+  <a href="#dostlar" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOSTLAR</a>
+  <a class="w3-bar-item w3-button w3-padding-large">HOŞ ANILAR &#9660</a>
+  <a href="#bb" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> &raquo; Bunları biliyor musunuz?</a>
+  <a href="#cs" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> &raquo; Çok söylenenler</a>
+  <a href="#en" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> &raquo; Sınıfımızın en'ler</a>
+</div>
+
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Mezuniyet</span>
+    </div>
+    <div class="w3-display-middle w3-center w3-topbar w3-bottombar w3-border-black" style="color:white;background: rgba(0, 0, 0, 0.3);width: 100%;">
+        <div class="w3-padding">
+          <h1 style="text-shadow:3px 3px 0 #444;">ELVEDA</h1>
+          <p>
+          Yeryüzünde yalnız biziz serseri <br/>
+          Yeryüzünde yalnız biziz derbeder <br/>
+          Herkesin dünyada varsa bir yeri <br/>
+          Bizimki de JEODEZİ <br/>
+          <br/>
+          Yıllarca gezdirdik hoyrat başımızı <br/>
+          Aradaki gerçek arkadaşlarımızı <br/>
+          Ölsek dikecek yoktur mezar taşımızı <br/>
+          Oysa hepimiz olduk hayat arakadaşı <br/>
+          <br/>
+          Gönlümüz ne dertlidir, ne bahtiyar <br/>
+          Ne kendimiz olur yar nede başkasına <br/>
+          Bir rüya uğrunda gezeriz diyar diyar <br/>
+          Birbirimiz peşinden yürür gideriz <br/>
+          <br/>
+          ARKADAŞLIĞIMIZ UĞRUNA ELVEDA...
+          </p>
+      </div>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-tag">2002</span>
+    </div>
+  </header>
+
+<!-- Page content -->
+<div style="margin-top:46px;">
+  <div id="uni" class="w3-padding-32"></div>
+  <!-- üniversite içerik -->
+  <div class="divortala">
+  <div class="w3-row w3-card-4" style="max-width: 1280px; width: 100%;">
+    <div class="w3-half w3-container">
+      <h3 class="w3-wide w3-tag">SAMSUN</h3>
+      <h2 class="w3-opacity"><i>Ondokuz Mayıs Üniversitesi</i></h2>
+      <p class="w3-justify">
+          1975 yılında Kuruluş Yasası çıkmış, 1979 yılında ilk 4 mezununu vermiş, kendine ait ilk binasına 1986 yılında geçebilmiş, ilk açılan iki fakültesi başka üniversitelerin bünyesinde eğitim-öğretime başlayabilmiş bir üniversite olmamıza rağmen yaşanan süratli kuruluş ve gelişme dönemi sonrası 1999 - 2000 Eğitim- Öğretim yılına 10 fakülte, 13 yüksekokul, 3 enstitüden oluşan 26 yükseköğretim kurumu ile başlanmıştır. Başlangıçta tamamı kiralık veya Kamu'ya ait binalarda hizmet veren yükseköğretim kurumlarımız bugün başta ülkemizin örnek kampüslerinden biri haline gelen Samsun Kurupelit Kampüsü olmak üzere Samsun, Amasya, Sinop, Ordu, illerimiz ile Bafra, Havza, Kavak, Merzifon ve Boyabat ilçelerimizde hemen tamamı Üniversitemize ait binalarda hizmet vermektedir.Halen 120'si profesör, 110'u doçent, 242'si yardımcı doçent olmak üzere 1339 öğretim üye ve elemanı görev yapmaktadır. 1999-2000 yılında 26.500 öğrenci eğitim ve öğretim almıştır...
+      </p>
+    </div>
+    <div class="w3-half w3-center w3-padding-64">
+        <div class="w3-row">
+          <div class="w3-padding w3-half">
+            <img src="uni/1.jpg" class="w3-card-4 w3-round" style="max-width:250px;">
+          </div>
+          <div class="w3-padding w3-half">
+            <img src="uni/2.jpg " class="w3-card-4 w3-round" style="max-width:250px;">
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-padding w3-half">
+            <img src="uni/3.jpg" class="w3-card-4 w3-round" style="max-width:250px;">
+          </div>
+          <div class="w3-padding w3-half">
+            <img src="uni/4.jpg" class="w3-card-4 w3-round" style="max-width:250px;">
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+ <!-- Dostlar İçerik -->
+ <div id="dostlar" class="w3-padding-32"></div>
+<div class="divortala">
+  <div class=" w3-row w3-center w3-card-4"  style="max-width: 1280px; width: 100%;">
+    <div class="w3-panel w3-orange" style="margin-top:0; text-shadow: 4px 2px #242323;">
+      <h1 class="w3-opacity w3-wide" style="text-shadow:1px 1px 0 #e0dcdc"><b>DOSTLAR</b></h1>
+    </div>
+    <div class="w3-row w3-container">
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('arzu.html','Arzu',1)">
+            <img src="resimler/arzu.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Arzu ÖNER</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('berkay.html','Berkay',0)">
+            <img src="resimler/berkay.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Berkay KELEŞ</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('bunyamin.html','Bünyamin',9)">
+            <img src="resimler/bunyamin.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Bünyamin YILDIRIM</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+    </div>
+  
+    <div class="w3-row w3-container">
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('can.html','Can',14)">
+            <img src="resimler/can.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Can BOZDEMİR</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('cigdem.html','Çiğdem',11)">
+            <img src="resimler/cigdem.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Çiğdem VAROL</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('elif.html','Elif',0)">
+            <img src="resimler/elif.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Elif ÇAKIR</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+    </div>
+  
+    <div class="w3-row w3-container">
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('gamze.html','Gamze',13)">
+            <img src="resimler/gamze.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Gamze IŞIK</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+       <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('levent.html','Levent',1)">
+            <img src="resimler/levent.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Levent GÜRDAL</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div> 
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('mahmut.html','Mahmut',10)">
+            <img src="resimler/mahmut.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Mahmut TUNCAY</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+    </div>
+  
+    <div class="w3-row w3-container"> 
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('mehmet.html','Mehmet',16)">
+            <img src="resimler/mehmet.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Mehmet ÇONGAR</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>  
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('murat.html','Murat',18)">
+            <img src="resimler/murat.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Murat NAS</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('mustafa.html','Mustafa',11)">
+            <img src="resimler/mustafa.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Mustafa TUTAM</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+    </div>
+    <div class="w3-row w3-container">
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('mutlu.html','Mutlu',5)">
+            <img src="resimler/mutlu.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Mutlu CEYHAN</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('nesrin.html','Nesrin',20)">
+            <img src="resimler/nesrin.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Nesrin ÖZBEK</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>          
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('nukhet.html','Nükhet',10)">
+            <img src="resimler/nukhet.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Nükhet GÜNBEYAZ</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+    </div>
+    <div class="w3-row w3-container">
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('sedar.html','Sedar',20)">
+            <img src="resimler/sedar.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Sedar GÖRMÜŞ</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('talip.html','Talip',0)">
+            <img src="resimler/talip.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Talip YÜZKAN</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+       <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('tarik.html','Tarık',0)">
+            <img src="resimler/tarik.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Tarık ÇAKIR</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>   
+    </div>
+    <div class="w3-row w3-container">
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('tayfun.html','Tayfun',0)">
+            <img src="resimler/tayfun.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Tayfun COŞKUN</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('umit.html','Ümit',13)">
+            <img src="resimler/umit.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Ümit KUYU</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+      <div class="w3-third w3-center w3-hover-sepia w3-padding-32" style="cursor:zoom-in" onclick = "modal('yavuz.html','Yavuz',17)">
+            <img src="resimler/yavuz.jpg" class="w3-circle w3-card-4" alt="">      
+            <h4>Yavuz KURU</h4>
+            <p><i>Jeodezi ve Fotogrametri Mühendisi</i></p>
+      </div>
+    </div> 
+  
+  </div>
+  </div>
+  
+<!-- Bunları Biliyormusunuz -->
+<div id="bb" class="w3-padding-32"></div>
+<div class="divortala">
+  <div class=" w3-row  w3-card-4"  style="max-width: 1280px; width: 100%;">
+    <div class="w3-panel w3-pink" style="margin-top: 0;">
+      <h1 class="w3-opacity" style="text-shadow:1px 1px 0 #444;"><b>Bunları biliyor musunuz ?</b></h1>
+    </div>
+    <div class="w3-container w3-col l6  w3-padding-32" style="display:inline-block;text-align:left;width: 100%">
+
+        <ul class="w3-ul w3-large">
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-indigo">Talip</span>'in bütün yemeklerde soğanı ayırdığı,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-lime">Sedar</span>'ın windows me yüklenirken giyinemediğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-teal">Yavuz</span>'un bilgisayarda scandisk yapılırken çok elektrik harcadığını düşündüğünü,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-amber">Mahmut</span>'un C programlama dilini tuvaletde öğrendiğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-green">Bünyamin</span>'nin Eylem adında bir kız arkadaşının olduğunu,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-indigo">Mehmet</span>'in jeodeziden hesap makinasız geçtiğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-light-green">Tarık</span>'la Mutlu'nun inşaatın balkonunda kilitli kaldığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-aqua">Mutlu</span>'nun koskoca bir söğüt ağacını kırdığını (bi çekül,bir prizma ve bir topcon gts701 kırdığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-pale-red">Nesrin</span>'in durup dururken tutup bir tutam saçını yaktığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-pink">Nesrin</span>'in inanılmaz yetkilerde bir başçavuş tanıdığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-light-blue">Nesrin</span>'in 1,5 aylık kadastro stajından 5 yıllık anı anlattığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-deep-purple">Tarık</span>'ın 12 yaşında Türkçe öğrendiğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-yellow">Can</span>'ın okulun tuvaletinde kilitli kalıp hiç sesini çıkartmadan kapıya vurduğunu,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-red">Sedar</span>'ın otobüsün kalkmasına beş dakika kala saçın fön çektiğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-cyan">Sedar</span>Sedar'da var olan tüm anıların mevcut olduğunu,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-lime">Çiğdem</span>'in Aybastı'lı olduğunu (Tarık tan),</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-purple">Çiğdem</span>'in tırtılları kurtaracam diye hastahanelik olduğunu,</li>
+            <li  class="w3-padding-16"><span class="w3-card w3-pale-red">Tarık, Can, Nükhet, Gamze, Çiğdem ve Nesrin gurubunun bir ay boyunca nivelman yaptığını,</span></li>
+            <li  class="w3-padding-16"><span class="w3-card w3-pale-blue">Bir ay nivelmandan sonra yinede iki kalıp hacı şakir kullandıklarını,</span></li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-deep-orange">Gamze</span>'nin okulun bitimine bir ay kala bilgisayar aldığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-amber">Sedar</span>'ın KMS sınavına girip yaklaşık 5000 soru çözdüğünü,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-khaki">Nesrin</span>'in denge2 finalinden sonra hocaya gidip "Hocam beni bütünlemeye bırakın" dediğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-lime">Nesrin</span>'in denge2 bütünden sonra "Hocam ne olur beni geçirin" diye ağladığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-green">Çongar</span>'ın yolunu kesen gaspçılarla 45 dk konuşarak onları kandırdığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-aqua">Murat Nas</span>'ın Türk dili dersinden neler çektiğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-light-blue">Sedar</span>'la Can'ın 1 kg çekirdeği hiç konuşmadan yiyip dönüp yattıklarını (Programlama sınavı akşamı),</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-indigo">Can</span>'ın köpeklerden kaçarak polis arabasına sığındığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-purple">Yavuz</span>'un sineği tekmelediğini,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-red">Gamze</span>'nin Serkan adında bir nişanlısı olduğunu,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-dark-gray">Arzu</span>'nun her sınavdan sonra bu dersten kalacam diye çıktığını ama hep yüksek notlar aldığın,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-yellow">Sedar</span>'ın jeodezi tarihi sınavında ilkçağlarda teodolit kullandığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-indigo">Sedar</span>'ın dünya kupası ile birlikte isminin fevernova olduğunu,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-amber">Talip</span>'in lisede kütüphaneden ödül aldığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-teal">Ümit Kuyu</span>'nun kurbağaya reflektör bağlayarak ölçüm yaptığını,</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-pale-red">Levent</span>'in bazen erken uyanarak derse geldiğini</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-blue-gray">Arzu</span>'nun lesten 49 aldığını.</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-pink">Nesrin</span>'in aslında dünyalı olmadığını? </li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-lime">Nesrin</span>'in dengelemeleri ağlayarak geçtiğini?</li>
+            <li  class="w3-padding-16"><span class="w3-card w3-pale-yellow">Sınıftan bir arkadaşın jeodeziyi hesap makinesiz geçtiğini?</span></li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-blue">Mutlu</span> ciddileştiğinde 3 kaplan gücünde olduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-aqua">Mahmut</span>'un neyapçağum ne etçeğum diyerek bir gün bırakıp gideceğini?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-amber">Yavuz</span>'un kavak altında doğduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-deep-orange">Tayfun</span>'un önceki hayatında Talip olduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-green">Çiğdem</span>'in aslında kedilere karşı alerjisi olduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-pink">Can</span>'ın sadrazam çocuğu olduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-khaki">Çongar</span>'ın 8210'u olduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-card w3-pale-green">Üçgenin iç açı toplamının 200 grad olduğunu?</span></li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-blue-gray">Sedar</span>'ın BEŞİKTAŞ JK ve ZONGULDAK 'tan maaş aldığını?</li>
+            <li  class="w3-padding-16"><span class="w3-card w3-light-blue">Dengelemenin sabunlamadan başka bir şey olmadığını?</span></li>
+            <li  class="w3-padding-16"><span class="w3-card w3-sand">Türkiye'de en iyi dengelemeyi bizim yaptığımızı??</span></li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-amber">Sedar</span>'ın Gauss , Jordan , Pisagor , Cholesy gibi bilimum bilim adamları ile akraba olduğunu?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-pink">Gamze</span>'nin gülmeye başladığında daha durdurulamadığını?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-lime0">Mutlu</span>'nun ileride astronot olmak istediğini?</li>
+            <li  class="w3-padding-16"><span class="w3-card w3-light-gray">Bizim bölümde bir bülbül olduğunu?</span></li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-aqua">Yavuz</span>'un burnundan sebep kupada çay içtiğini?</li>
+            <li  class="w3-padding-16"><span class="w3-badge w3-card w3-green">Mahmut</span>Ödevleri finalden önce vermezsek kalacağımızı?</li>
+      </ul>
+    </div>
+
+</div>
+</div>
+
+
+<!-- Çok söylenenler -->
+<div id="cs" class="w3-padding-32"></div>
+<div class="divortala">
+  <div class=" w3-row w3-card-4"  style="max-width: 1280px; width: 100%;">
+    <div class="w3-panel w3-blue" style="margin-top: 0;">
+      <h1 class="w3-opacity" style="text-shadow:1px 1px 0 #444"><b>Çok söylenenler...</b></h1>
+    </div>
+    <div class="cs w3-container">
+      <div class="w3-panel w3-card w3-padding w3-border-pink" style="border-left:16px solid">
+        <h2>CAN</h2> - Yok gulağum....
+      <hr>- Ya ben donuyorum....
+      <hr>- Yuh.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-purple" style="border-left:16px solid">
+      <h2>SEDAR</h2>-Beşiktaş....
+      <hr>-Siimaaa....
+      <hr>-Su Malağı....
+      <hr>-Yoo sinirlenmedim....
+      <hr>-O hareketler beni sinirlendirmez....
+      <hr>-Bu eller ne yapar.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-amber" style="border-left:16px solid">
+      <h2>YAVUZ</h2>-İyi ha....
+      <hr>-Kızdıysan buzdolabına gir....
+      <hr>-Sende sinirlenmiş ibaresi görüyorum....
+      <hr>-masi....
+      <hr>-Vuuuu ne etdiiiii.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-pink" style="border-left:16px solid">
+        <h2>MUTLU</h2>-Esasında....
+      <hr>-Jeodezici değil astronot olacaz herhalde....
+      <hr>-doldur....
+      <hr>-Ben yokluk görmedim.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-cyan" style="border-left:16px solid">
+        <h2>BERKAY</h2>-Güzelim....
+      <hr>-Evendum zaatuhatuerdurkişi.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-purple" style="border-left:16px solid">
+        <h2>GAMZE</h2>-Ay çok gıcıksın....
+      <hr>-Ya Sinop'a gidelim.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-blue" style="border-left:16px solid">
+        <h2>BÜNYAMİN</h2>-Ne etdin gardaş....
+      <hr>-Sen gel hele bi.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-light-green" style="border-left:16px solid">
+        <h2>MAHMUT</h2>Yekten bir kafa atarım....
+      <hr>-Saralım dayağı....
+      <hr>-Naber paçi....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-deep-orange" style="border-left:16px solid">
+        <h2>ÇİĞDEM</h2>-Pislik....
+      <hr>-Ben telefon açmaya gidiyorum....
+      <hr>-Hoca yok hadi gidelim.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-pale-red" style="border-left:16px solid">
+        <h2>NÜKHET</h2>-Çok başım ağrıyor....
+      <hr>-Hocam sınavdan önce konu tekrarı yapacakmıyız....
+      <hr>-Ya ogün olmaz benim işim var....
+      <hr>-Aşkolsun.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-indigo" style="border-left:16px solid">
+        <h2>TARIK</h2>-Ondan sonra....
+      <hr>-Güle güle güle öldük.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-teal" style="border-left:16px solid">
+        <h2>ARZU</h2>-Resimlerde gözlerim kırmızı çıkıyor.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-amber" style="border-left:16px solid">
+        <h2>SUAT HOCA</h2>-Keretalar....
+      <hr>-Çingene kızım....
+      <hr>-Haftaya tatlıyı sen getir....
+      <hr>-Ne bu haliniz uşaklar....
+      <hr>-Kızlarımıda kendinize benzettiniz....
+      <hr>-Sen Sedar'la çokmu dolaşmaya başladın.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-aqua" style="border-left:16px solid">
+        <h2>SEDAT HOCA</h2>-Öbür dönem yokum....
+      <hr>-Başbakanlıktan aradılar....
+      <hr>-Bu ödevleri yapmazsanız geçemezsiniz.....
+      </div>
+      <div class="w3-panel w3-card w3-padding w3-border-purple" style="border-left:16px solid">
+        <h2>DERYA HOCA</h2>-Buna benim yetkim yok.....
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SINIFIMIZIN EN'LERİ -->
+<div id="en" class="w3-padding-32"></div>
+<div class="divortala">
+  <div class=" w3-row w3-card-4"  style="max-width: 1280px; width: 100%;">
+    <div class="w3-panel w3-green" style="margin-top: 0;">
+      <h1 class="w3-opacity" style="text-shadow:1px 1px 0 #444"><b>Sınıfımızın en'leri...</b></h1>
+    </div>
+
+    <div class="w3-container w3-padding">
+      
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-pink" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En azimli</b></p><p>Mustafa Tutam</p>
+              </div>
+            </div>
+            <hr>
+
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-teal" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En mükemmel</b></p><p> Murat Nas</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-orange" style="width:100px;">B</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En taklit</b></p><p> Berkay Keleş</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-indigo" style="width:100px;">T</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Fransız</b></p><p> Tarık Çakır</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-cyan" style="width:100px;">C</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En fırıldak</b></p><p>Can Bozdemir</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-blue-gray" style="width:100px;">S</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Karizma</b></p><p> Sedar Görmüş</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-blue" style="width:100px;">Y</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En laz</b></p><p>Yavuz Kuru</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-red" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Panik</b></p><p> Mahmut Tuncay</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-purple" style="width:100px;">N</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En meşgul</b></p><p> Nükhet Günbeyaz</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-yellow" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En geveze</b></p><p> Mutlu Ceyhan</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-red" style="width:100px;">A</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En asabi</b></p><p> Arzu Öner</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-deep-purple" style="width:100px;">Ç</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En özgür</b></p><p> Çiğdem Varol</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-pale-red" style="width:100px;">G</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En sabırlı</b></p><p> Gamze Işık</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-pale-green" style="width:100px;">T</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En internet</b></p><p> Tayfun Coşkun</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-indigo" style="width:100px;">T</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Kütüphane</b></p><p> Talip Yüzkan</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-aqua" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Organizatör</b></p><p> Mehmet Çongar</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-amber" style="width:100px;">B</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En baba</b></p><p> Bünyamin Yıldırım</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-pink" style="width:100px;">N</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En CANa yakın</b></p><p> Nesrin Özbek</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-cyan" style="width:100px;">Ü</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En enteresan</b></p><p> Ümit Kuyu</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-lime" style="width:100px;">L</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En leman</b></p><p> Levent Gürdal</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-pale-red" style="width:100px;">E</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En sessiz</b></p><p> Elif Çakır</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-teal" style="width:100px;">S</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Yolcu</b></p><p> Sedat Hoca</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-brown" style="width:100px;">S</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En yakın</b></p><p> Suat hoca</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-purple" style="width:100px;">S</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En rahat</b></p><p>Sebahattin Hoca</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-light-green" style="width:100px;">D</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En konuşkan</b></p><p> Derya Hoca</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-aqua" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En ezber</b></p><p> Mustafa Tutam</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-amber" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Piknik</b></p><p> Murat Nas</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-blue" style="width:100px;">C</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En şerefsiz</b></p><p> Can Bozdemir</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-red" style="width:100px;">M</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En Happy</b></p><p> Mutlu Ceyhan</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-green" style="width:100px;">G</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En aşık</b></p><p> Gamze Işık</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-pink" style="width:100px;">T</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En ilgisiz</b></p><p> Tayfun Coşkun</p>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+              <div class="w3-col" style="width: auto; padding-right: 10px;">
+                <span class="w3-badge w3-jumbo w3-padding  w3-deep-orange" style="width:100px;">B</span>
+              </div>
+              <div class="w3-rest">
+                <p><b>En kıvırcık</b></p><p> Bünyamin Yıldırım</p>
+             </div>
+  </div>
+</div>
+
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal"> 
+          <span onclick="document.getElementById('ticketModal').style.display='none'" 
+         class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
+          <h2 id="about_baslik" class="w3-wide" style="text-shadow: 3px 3px 5px #494747;"></h2>
+        </header>
+        <iframe id="myiframe" width="100%" height="350px" frameborder="0"></iframe>
+        
+
+        <div class="w3-row w3-container w3-padding-16">
+          <div class="w3-col w3-right" style="width:auto;">
+            <button class="w3-col w3-button w3-red w3-round w3-right" onclick="document.getElementById('ticketModal').style.display='none'">Kapat<b>&times;</b></button>
+          </div>
+          <div class="w3-rest"> 
+            <button id="foto" class="w3-button w3-blue w3-round" onclick="openModal()">Fotoğraflar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+<!-- Image modal yeni-->
+<div id="myModal" class="w3-modal" style="background-color: black;">
+  <div class="w3-modal-content w3-animate-zoom" style="background-color: black;">
+      <!-- Image Slider in Modal -->
+      <div id="slider" class="divortala w3-content w3-display-container w3-padding-64">
+          <!-- Navigation buttons -->
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          <span class="w3-button w3-gray w3-hover-red w3-xlarge w3-display-topright" onclick="closeModal()">&times;</span>
+      </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">2002-SAMSUN</p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function modal(html,name,resim){
+      document.getElementById('ticketModal').style.display='block';
+      document.getElementById('about_baslik').innerHTML = '<span>&#9781;</span><span style="margin-left:20px;">' + name + '</span>';
+      document.getElementById('myiframe').src ='text/' + html;
+      //document.getElementById('resim').innerHTML="";
+
+      // Tüm mySlides sınıfına sahip img öğelerini seçin
+      var imgElements = document.querySelectorAll(".mySlides1");
+
+      // Her bir img öğesini sırayla kaldırın
+      imgElements.forEach(function(imgElement) {
+          imgElement.remove();
+      });
+
+      if(resim==0) document.getElementById("foto").style.display='none';
+      else{ 
+        document.getElementById("foto").style.display='';
+        nameresim = name.toLowerCase();
+        nameresim = nameresim.replace(/ü/g, "u")
+                            .replace(/ç/g, "c")
+                            .replace(/ş/g, "s")
+                            .replace(/ö/g, "o")
+                            .replace(/ğ/g, "g")
+                            .replace(/ı/g, "i")
+                            
+
+
+        for (i = 1; i <= resim; i++) {
+              const imgElement = document.createElement("img");
+              imgElement.classList.add("mySlides1");
+              imgElement.src = "galeri/"+ nameresim + "/"+ i +".jpg"; // Resmin dosya yolu veya URL'sini belirtin
+              document.getElementById("slider").appendChild(imgElement);
+          }
+      }
+        
+    }
+
+
+    let slideIndex = 1;
+ 
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+
+    function openModal() {
+        showDivs(slideIndex);
+        document.getElementById('myModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+var modal1 = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
